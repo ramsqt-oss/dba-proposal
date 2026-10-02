@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Proposal — Defence Business Advisor</title>
+<style>
+@page { size: 1920px 1080px; margin: 0 }
+* { box-sizing: border-box; margin: 0; padding: 0 }
+.slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; padding: 104px 140px 96px; background: #F5F1E8; color: #111111; font-family: Iowan Old Style, Palatino, Georgia, serif; font-size: 34px; line-height: 1.4; display: flex; flex-direction: column; justify-content: center; page-break-after: always }
+.slide:last-child { page-break-after: auto }
+.slide__label { position: absolute; top: 84px; left: 140px; font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 24px; line-height: 1.2; letter-spacing: 0.18em; text-transform: uppercase; color: #C97B1E }
+.slide__mark { position: absolute; bottom: 72px; right: 140px; font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 24px; line-height: 1.2; opacity: 0.55 }
+.slide__heading { font-size: 54px; line-height: 1.2; max-width: 26ch; margin-bottom: 32px }
+.rule { width: 220px; height: 10px; background: #C97B1E; border-radius: 5px }
+.glyph { width: 56px; height: 56px; color: #C97B1E }
+.slide--title { justify-content: flex-end }
+.title__name { font-size: 132px; line-height: 1.2; max-width: 20ch }
+.title__sub { font-size: 40px; line-height: 1.4; max-width: 60ch; margin-top: 40px; opacity: 0.72 }
+.slide--title .rule { margin-bottom: 56px }
+.stat-row { display: flex; gap: 48px; align-items: stretch }
+.stat-tile { flex: 1 1 0; min-width: 0; padding: 34px 32px; border: 3px solid #C97B1E33; border-radius: 28px; background: #C97B1E14; display: flex; flex-direction: column; gap: 14px }
+.stat-tile__value { font-size: 68px; line-height: 1.2; color: #C97B1E; letter-spacing: -0.02em; overflow-wrap: break-word; hyphens: none }
+.stat-tile__unit { font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 34px; line-height: 1.2; letter-spacing: 0.06em; color: #C97B1E; margin-top: -8px }
+.stat-tile__label { font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 28px; line-height: 1.4; max-width: 22ch; opacity: 0.78; margin-top: auto }
+.compare { display: flex; gap: 56px; align-items: stretch }
+.compare__col { flex: 1 1 0; padding: 64px 56px; border-radius: 28px; background: #1111110A }
+.compare__col--after { background: #C97B1E14; border: 3px solid #C97B1E33 }
+.compare__col h3 { font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 28px; line-height: 1.2; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 40px; color: #C97B1E }
+.compare__col li { list-style: none; font-size: 36px; line-height: 1.4; max-width: 34ch; margin-bottom: 28px }
+.statement { font-size: 104px; line-height: 1.2; max-width: 24ch }
+.statement__by { font-size: 30px; line-height: 1.4; margin-top: 64px; opacity: 0.6 }
+.quote { padding-left: 64px; border-left: 12px solid #C97B1E }
+.quote__text { font-size: 54px; line-height: 1.3; max-width: 32ch }
+.quote__by { font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 30px; line-height: 1.4; margin-top: 56px; opacity: 0.7 }
+.close__ask { font-size: 88px; line-height: 1.2; max-width: 24ch; margin-bottom: 72px }
+.close__terms { display: flex; gap: 40px }
+.close__term { flex: 1 1 0; padding: 56px 48px; border-radius: 24px; border: 3px solid #C97B1E33; font-size: 34px; line-height: 1.4 }
+.note { font-family: Avenir Next, Segoe UI, system-ui, sans-serif; font-size: 26px; line-height: 1.4; opacity: 0.75; margin-top: 22px }
+</style>
+</head>
+<body>
+
+<section class="slide slide--title">
+  <div class="rule"></div>
+  <h1 class="title__name">Three services that stop orders going quiet</h1>
+  <p class="title__sub">Prepared for Rajeev Khanna, owner, Defence Business Advisor, Bangalore<br>Prepared by Ram Prasad, Defence Business Advisor</p>
+  <p class="title__sub">2 October 2026</p>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="slide__label">Marketing</p>
+  <div class="quote">
+    <p class="quote__text">"Last month there was a cable assembly notice. Only seven days were given. By the time we sent it, the OEM said it was not possible, and later I heard another consultant had sent it to them two days before us."</p>
+    <p class="quote__by">Rajeev Khanna, owner, Defence Business Advisor</p>
+  </div>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="statement">Find the notice in time. Protect the delivery. Keep the account.</p>
+  <p class="statement__by">Three services, each aimed at one gap in the same week.</p>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="slide__label">Marketing</p>
+  <h2 class="slide__heading">Every notice that fits each OEM, on one list, before nine</h2>
+  <p>Reads the portal and the amendments. Matches each notice to what each OEM can actually make. Names the OEM, the item and the last date, with the original notice one click away.</p>
+  <div class="stat-row">
+    <div class="stat-tile">
+      <span class="stat-tile__value">Rs 12-15</span>
+      <span class="stat-tile__unit">thousand a month</span>
+      <span class="stat-tile__label">of Amit's time returned. Estimate, assumes half his day.</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-tile__value">Rs 1-1.5</span>
+      <span class="stat-tile__unit">lakh a month</span>
+      <span class="stat-tile__label">of commission at risk. Estimate, assumes one in five of the extra notices gets bid.</span>
+    </div>
+  </div>
+  <p class="note">Rs 75,000-1,50,000 to build, Rs 20,000-35,000 a month. Estimate, priced at about 15% of the first year's value.</p>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="slide__label">Fulfilment</p>
+  <h2 class="slide__heading">A slip shows up before the delivery date, not after</h2>
+  <p>Each order tracked by milestone: material, inspection call, QA visit, dispatch, delivery, GRN. An alert before each date, and the delay letter drafted the moment one slips.</p>
+  <div class="stat-row">
+    <div class="stat-tile">
+      <span class="stat-tile__value">Rs 1-2</span>
+      <span class="stat-tile__unit">lakh a year</span>
+      <span class="stat-tile__label">of penalty letters avoided. Estimate, assumes two avoided a year, from the nine-day inspection wait.</span>
+    </div>
+  </div>
+  <p class="note">Rs 50,000-90,000 to build, Rs 10,000-18,000 a month. Estimate, priced against the penalty letters it prevents.</p>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="slide__label">Retention</p>
+  <h2 class="slide__heading">You hear it from the numbers, not from the OEM leaving</h2>
+  <p>A monthly signal per OEM: notices accepted, bids made, orders won, days since contact. A flag the moment it drops.</p>
+  <div class="stat-row">
+    <div class="stat-tile">
+      <span class="stat-tile__value">Rs 4.2-6</span>
+      <span class="stat-tile__unit">lakh a year</span>
+      <span class="stat-tile__label">of retainer protected. Estimate, assumes one OEM kept, at Rs 35,000-50,000 a month.</span>
+    </div>
+  </div>
+  <p class="note">Rs 50,000-90,000 to build, Rs 10,000-18,000 a month. Estimate, priced at 2-4% of the retainer it protects.</p>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide">
+  <p class="slide__heading">The same week, before and after</p>
+  <div class="compare">
+    <div class="compare__col">
+      <h3>Today</h3>
+      <li>Notices read by hand before nine</li>
+      <li>A slip found three days before the date</li>
+      <li>An OEM drifting for months before anyone notices</li>
+    </div>
+    <div class="compare__col compare__col--after">
+      <h3>After</h3>
+      <li>One list each morning</li>
+      <li>An alert before each milestone</li>
+      <li>A flag the month an account starts to go quiet</li>
+    </div>
+  </div>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+<section class="slide slide--close">
+  <p class="close__ask">Start with the morning list on two OEMs.</p>
+  <div class="close__terms">
+    <div class="close__term">Rs 8,000 a month, 2 months notice</div>
+    <div class="close__term">First proof inside 4 weeks, measured on your own notices</div>
+    <div class="close__term">Start date: 1 November 2026</div>
+  </div>
+  <p class="slide__mark">Ram Prasad</p>
+</section>
+
+</body>
+</html>
